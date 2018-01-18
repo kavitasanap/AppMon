@@ -1,0 +1,7 @@
+language: bash
+
+before_script:
+    - echo " in the before script"
+
+script:
+    - bash url_monitor_test.sh
