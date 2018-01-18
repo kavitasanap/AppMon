@@ -1,7 +1,17 @@
-language: bash
+dist: trusty
 
+addons:
+  sonarcloud:
+    organization: "kavitagithub" # the key of the org you chose at step #3
+    token:
+      secure: $SONAR_TOKEN # encrypted value of your token
+
+language: bash 
+     
 before_script:
     - echo " in the before script"
 
 script:
     - bash url_monitor_test.sh
+    - sonar-scanner
+    
