@@ -1,11 +1,11 @@
 #!/usr/bin/env bats
 
 @test "Check zero arg checks" {
-	./src/app-monitor.sh
+	sh ./src/app-monitoring.sh
 	[ $status -eq 1 ]
 }
 
 @test "A test I don't want to execute for now" {
-	./src/app-monitor.sh https://google.com  abcd
+	./src/app-monitoring.sh https://google.com  abcd
 	[ $status -eq 0 ]
 }

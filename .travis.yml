@@ -26,10 +26,14 @@ jobs:
     - stage: sonarscan
       script: 
         - sonar-scanner
-    - satge: 
-      script: ./release      
+    - satge: release
+      script: ./src/release      
     
 notifications:
   email:
-    on_success: never
+    recipients:
+      - kavitasanap@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
+ 
  
