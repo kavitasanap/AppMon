@@ -2,3 +2,9 @@
 2018-01-21 00:16:49==>Monitoring http://testsdfsd.com started
 2018-01-21 00:18:20==>Monitoring http://testsdfsd.com Finished
 2018-01-21 00:18:20==>Finished health check run with 1 error
+2018-01-21 01:02:04==>Starting health check run
+2018-01-21 01:02:04==>Monitoring http://testsdfsd.com started
+2018-01-21 01:03:35==>Monitoring http://testsdfsd.com Finished
+2018-01-21 01:03:36==>Finished health check run with 1 error
+2018-01-21 01:05:26==>Starting health check run
+2018-01-21 01:05:26==>Monitoring http://testsdfsd.com started
