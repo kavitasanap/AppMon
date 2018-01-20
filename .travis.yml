@@ -9,23 +9,12 @@ addons:
 language: bash 
 
 stages:
-  - test
-  - sonarscan
+#  - test
+#  - sonarscan
   - release
   
 jobs:
   include:
-    - stage: test
-      before_install:
-        - sudo add-apt-repository ppa:duggan/bats --yes
-        - sudo apt-get update -qq
-        - sudo apt-get install -qq bats
-        - sudo apt-get install -qq mutt 
-      script:
-        - bats test/bats
-    - stage: sonarscan
-      script: 
-        - sonar-scanner
     - stage: release
       script:
         - sh ./src/release.sh      

@@ -27,7 +27,7 @@
 #			   act on failure if there are any in the report
 #			   Use ',' as a delimeter to send email to multiple recipients		
 #===================================================================================
-function email_report(){
+function email_report{
 	mutt -s "Monitoring Report" -a $html_report -- "$email" < resources/email_body_message.txt
 }
 
@@ -35,7 +35,7 @@ function email_report(){
 # NAME: usage
 # DESCRIPTION: Display the usage information for this script.
 #===================================================================================
-function usage(){
+function usage{
 	log "No app info provided as a script argument. Script need atleast one url to generate monitoring report.
 		 e.g. app-monitoring.sh http://centos.org http://webtest.com" 
 
@@ -54,7 +54,7 @@ function usage(){
 # DESCRIPTION: log all the messages which cab be use trouble shooting
 #			   in case of script issues. 
 #===================================================================================
-function log(){
+function log{
 	echo "`date '+%Y-%m-%d %H:%M:%S'`==>$1" >> $log_file
 }
 
@@ -62,7 +62,7 @@ function log(){
 # NAME: init
 # DESCRIPTION: initialize all the required variables.
 #===================================================================================
-function init(){
+function init{
     BASE_DIR=`pwd`
 	echo $BASE_DIR
     error_count=0
@@ -74,7 +74,7 @@ function init(){
 # NAME: format_report
 # DESCRIPTION: format monitoring report to display in tabular format.
 #===================================================================================
-function format_report(){
+function format_report{
  	html_report="${BASE_DIR}/report/monitoring_report_`date '+%Y-%m-%d'`.html"		#monitoring report file name
 	
 	add_to_report "<html><body>"
@@ -93,7 +93,7 @@ function format_report(){
 # DESCRIPTION: add entries to html report file.
 # PARAMETER 1: html element to be added in report.
 #===================================================================================
-function add_to_report()
+function add_to_report
 {
 	echo $1 >> $html_report
 }
@@ -108,7 +108,7 @@ function add_to_report()
 #		   $4: response_code
 #		   $5: response_description			 
 #===================================================================================
-function save_health_status(){
+function save_health_status{
    add_to_report "<tr bgcolor="$1"> <td>$2</td> \
 					   <td>$3</td> \
 					   <td>$4</td> \
@@ -124,7 +124,7 @@ function save_health_status(){
 #===================================================================================
 #Check if url is starting with http or https 
 #before executing curl for health check.
-function validate_url(){
+function validate_url{
 	if [[ "$url" =~ ^http://|https://.* ]]; then
 	  return 0
 	else
@@ -136,7 +136,7 @@ function validate_url(){
 # NAME: parse_status
 # DESCRIPTION: parse response to get the values for monitoring report generation. 
 #===================================================================================
-function parse_status(){
+function parse_status{
 	row_color="red"
 	response_description="Unknown Error"
 	response_code=`echo $response | tr " " "\n" | awk -F: '$1=="http_status"{print $2}'`	#Retrieve the httpd_code
@@ -161,7 +161,7 @@ function parse_status(){
 # DESCRIPTION: Loop through provided arguments and
 #			   perform health check for valid http urls.	
 #===================================================================================
-perform_health_check(){
+perform_health_check{
     log "Starting health check run"
 	
 	for url in ${BASH_ARGV[*]} ; do		#Loop through script arguments
@@ -194,7 +194,7 @@ perform_health_check(){
 # DESCRIPTION: Validation to make sure that argument are passed to 
 #			   the script before continue script execution	
 #===================================================================================
-parse_input(){
+parse_input{
 	if [[ "$#" == 0 ]]; then 	#if no arg provided
 		usage
 		exit 1
