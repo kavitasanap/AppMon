@@ -1,0 +1,8 @@
+Hi Team,
+
+Please find attached application monitoring report.
+Look into the applications which are not green state.
+
+
+Regards,
+Monitoring Team

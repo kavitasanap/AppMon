@@ -1,0 +1,208 @@
+#!/bin/bash
+#===================================================================================
+#
+# FILE: app-monitoring.sh
+#
+# USAGE: app-monitoring.sh url1 url2 url3 ...
+#   	 e.g. app-monitoring.sh http://centos.org http://webtest.com
+#
+# DESCRIPTION: Monitors the health of applications which are passed as a url.
+# The default starting directory is the current directory.
+# Script need atleast one url to generate monitoring report. 
+#
+# REQUIREMENTS: Need of monitoring solution to check application availability 
+# and generate alarm if application is down to act on it.
+#
+# NOTES: ---
+# AUTHOR: Kavita Sanap
+# VERSION: 1.0
+# CREATED: 19.01.2018 
+# REVISION: 
+#===================================================================================
+
+
+#=== FUNCTION ======================================================================
+# NAME: email_report
+# DESCRIPTION: email monitoring report to notify application/support teams to 
+#			   act on failure if there are any in the report
+#			   Use ',' as a delimeter to send email to multiple recipients		
+#===================================================================================
+function email_report(){
+	mutt -s "Monitoring Report" -a $html_report -- "$email" < resources/email_body_message.txt
+}
+
+#=== FUNCTION ======================================================================
+# NAME: usage
+# DESCRIPTION: Display the usage information for this script.
+#===================================================================================
+function usage(){
+	log "No app info provided as a script argument. Script need atleast one url to generate monitoring report.
+		 e.g. app-monitoring.sh http://centos.org http://webtest.com" 
+
+	cat <<- EOT
+		 USAGE: 
+		 Monitors the health of applications which are passed as a url.
+		 app-monitoring.sh url1 url2 url3 ...
+		 Script need atleast one url to generate monitoring report.
+		 e.g. app-monitoring.sh http://centos.org http://webtest.com
+		EOT
+		
+}
+
+#=== FUNCTION ======================================================================
+# NAME: log
+# DESCRIPTION: log all the messages which cab be use trouble shooting
+#			   in case of script issues. 
+#===================================================================================
+function log(){
+	echo "`date '+%Y-%m-%d %H:%M:%S'`==>$1" >> $log_file
+}
+
+#=== FUNCTION ======================================================================
+# NAME: init
+# DESCRIPTION: initialize all the required variables.
+#===================================================================================
+function init(){
+    BASE_DIR=`pwd`
+	echo $BASE_DIR
+    error_count=0
+	email="kavitasanap@gmail.com"			#email address to notify health check result
+	log_file="${BASE_DIR}/log/health_check_log_`date '+%Y-%m-%d'`.log"		#log file name to capture script execution 
+}
+
+#=== FUNCTION ======================================================================
+# NAME: format_report
+# DESCRIPTION: format monitoring report to display in tabular format.
+#===================================================================================
+function format_report(){
+ 	html_report="${BASE_DIR}/report/monitoring_report_`date '+%Y-%m-%d'`.html"		#monitoring report file name
+	
+	add_to_report "<html><body>"
+	add_to_report "`cat resources/report_intro.txt`"
+	add_to_report "`date '+%Y-%m-%d %H:%M:%S'`"
+	add_to_report "<table border='1'>" 			
+	add_to_report "<tr> <th>URL</th> \
+				        <th>RESPONSE_TOTALTIME</th> \
+						<th>RESPONSE_CODE</th> \
+						<th>RESPONSE_DESCRIPTION</th> 
+				   </tr>"
+}
+
+#=== FUNCTION ======================================================================
+# NAME: add_to_report
+# DESCRIPTION: add entries to html report file.
+# PARAMETER 1: html element to be added in report.
+#===================================================================================
+function add_to_report()
+{
+	echo $1 >> $html_report
+}
+
+#=== FUNCTION ======================================================================
+# NAME: save_health_status
+# DESCRIPTION: log all the messages which cab be use trouble shooting
+#			   in case of script issues. 
+#PARAMETER $1: background color for row
+#		   $2: application url
+#		   $3: response_totaltime
+#		   $4: response_code
+#		   $5: response_description			 
+#===================================================================================
+function save_health_status(){
+   add_to_report "<tr bgcolor="$1"> <td>$2</td> \
+					   <td>$3</td> \
+					   <td>$4</td> \
+					   <td>$5</td> \
+				  </tr>" 
+}
+
+#=== FUNCTION ======================================================================
+# NAME: validate_url
+# DESCRIPTION: validate url. 
+# Return: 0 if application url is valid (starting with http:// or https://
+#		  1 if application url is not valid (starting with other than http:// or https://
+#===================================================================================
+#Check if url is starting with http or https 
+#before executing curl for health check.
+function validate_url(){
+	if [[ "$url" =~ ^http://|https://.* ]]; then
+	  return 0
+	else
+      return 1	
+	fi
+}
+
+#=== FUNCTION ======================================================================
+# NAME: parse_status
+# DESCRIPTION: parse response to get the values for monitoring report generation. 
+#===================================================================================
+function parse_status(){
+	row_color="red"
+	response_description="Unknown Error"
+	response_code=`echo $response | tr " " "\n" | awk -F: '$1=="http_status"{print $2}'`	#Retrieve the httpd_code
+	response_totaltime=`echo $response | tr " " "\n" | awk -F: '$1=="response_time"{print $2}'`		#Retrieve the total response time
+	
+	#----------------------------------------------------------------------
+	# check http_code & curl exit code to set the description accordingly 
+	# for user friendly message in the report.
+	#----------------------------------------------------------------------
+	case $response_code in
+		200|302) response_description="COMPONENT IS GREEN" row_color="green";;
+		401) response_description="COMPONENT IS RED";;		
+		000) response_description=`awk -v k=$curl_stat -F":" '$1==k{ print $2} ' resources/error_lookup.txt`;;
+		*)   response_description="Please debug the issue to fix $response_code";;
+	esac
+	
+	save_health_status $row_color $url $response_totaltime $response_code "$response_description"
+}
+
+#=== FUNCTION ======================================================================
+# NAME: perform_health_check
+# DESCRIPTION: Loop through provided arguments and
+#			   perform health check for valid http urls.	
+#===================================================================================
+perform_health_check(){
+    log "Starting health check run"
+	
+	for url in ${BASH_ARGV[*]} ; do		#Loop through script arguments
+	  log "Monitoring $url started"
+	  validate_url						
+	  if [[ "$?" == 0 ]]; then			#Execute curl for valid urls
+	  {
+		 response=`curl -m 60 --retry 3  --retry-delay 30 --silent -w "http_status:%{http_code} response_time:%{time_total}" $url -o /dev/null`
+	  	 curl_stat=$?					#curl exit status to handle network errors
+		 parse_status $curl_stat
+		 if [[ $curl_stat != 0 ]]; then	
+			let error_count++
+		 fi
+	  }
+	  else							    #Report errors in report file
+		 row_color="yellow"
+		 log "$url is not valid, skipping health check. Please verify it"
+		 save_health_status $row_color "$url" 	"0"   "NA"    "Invalid URL" 
+		 let error_count++
+	  fi
+	  log "Monitoring $url Finished"
+    done
+	
+	log "Finished health check run with $error_count error"
+	add_to_report "</table></body></html>"
+}
+
+#=== FUNCTION ======================================================================
+# NAME: parse_input
+# DESCRIPTION: Validation to make sure that argument are passed to 
+#			   the script before continue script execution	
+#===================================================================================
+parse_input(){
+	if [[ "$#" == 0 ]]; then 	#if no arg provided
+		usage
+		exit 1
+	fi  	
+}
+
+init
+parse_input $@
+format_report
+perform_health_check
+email_report
