@@ -16,6 +16,8 @@ stages:
 jobs:
   include:
     - stage: release
+      before_install:
+        - sudo apt-get install -qq mutt
       script:
         - sh ./src/release.sh      
     
