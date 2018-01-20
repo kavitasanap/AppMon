@@ -6,6 +6,6 @@
 }
 
 @test "A test I don't want to execute for now" {
-	run ./src/app-monitoring.sh https://google.com  abcd
+	run ./src/app-monitoring https://google.com  abcd
 	 [ "${status}" -eq 0 ]
 }
