@@ -1,6 +1,10 @@
 dist: trusty
 
 addons:
+  apt:
+    packages:
+    - mutt
+    - bats    
   sonarcloud:
     organization: "kavitagithub" # the key of the org you chose at step #3
     token:
@@ -19,8 +23,8 @@ jobs:
       before_install:
         - sudo add-apt-repository ppa:duggan/bats --yes
         - sudo apt-get update -qq
-        - sudo apt-get install -qq bats
-        - sudo apt-get install -qq mutt
+      #  - sudo apt-get install -qq bats
+      # - sudo apt-get install -qq mutt
         - chmod +x ./src/app-monitoring
       script:
         - bats test/bats
