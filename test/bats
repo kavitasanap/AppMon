@@ -5,7 +5,7 @@
 	[ "${status}" -eq 1 ]
 }
 
-@test "A test I don't want to execute for now" {
-	run ./src/app-monitoring https://google.com  abcd
-	 [ "${status}" -eq 0 ]
-}
+#@test "A test I don't want to execute for now" {
+#	run ./src/app-monitoring https://google.com  abcd
+#	 [ "${status}" -eq 0 ]
+#}
