@@ -2,9 +2,12 @@ dist: trusty
 
 addons:
   apt:
+    sources:
+    - sourceline: 'ppa:duggan/bats'
     packages:
-    - mutt
-    - bats    
+    - bats
+    - bc
+    - mutt    
   sonarcloud:
     organization: "kavitagithub" # the key of the org you chose at step #3
     token:
