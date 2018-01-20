@@ -1,2 +1,3 @@
+#!/bin/bash
 echo "checkin code to release branch"
-sh ./src/app-monitoring.sh https://google.com  abcd
+./src/app-monitoring https://google.com  abcd

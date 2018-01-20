@@ -29,7 +29,7 @@
 #===================================================================================
 email_report()
 {
-	echo "-s Monitoring Report -a ${html_report} -- ${email} < ${BASE_DIR}/resources/email_body_message.txt"
+	echo "-s Monitoring Report -a $html_report -- $email < ${BASE_DIR}/resources/email_body_message.txt"
 	mutt -s "Monitoring Report" -a "${html_report}" -- "${email}" < ${BASE_DIR}/resources/email_body_message.txt
 	
 	
