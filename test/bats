@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 
 @test "Check zero arg checks" {
-	run ./src/app-monitoring.sh
+	run ./src/app-monitoring
 [ "${status}" -eq 1 ]
 }
 
