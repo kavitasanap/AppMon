@@ -28,7 +28,7 @@
 #			   Use ',' as a delimeter to send email to multiple recipients		
 #===================================================================================
 email_report{
-	mutt -s "Monitoring Report" -a $html_report -- "$email" < resources/email_body_message.txt
+	mutt -s "Monitoring Report" -a ${BASE_DIR}/$html_report -- "$email" < ${BASE_DIR}/resources/email_body_message.txt
 }
 
 #=== FUNCTION ======================================================================
