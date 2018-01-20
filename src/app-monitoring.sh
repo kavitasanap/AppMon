@@ -206,3 +206,5 @@ parse_input $@
 format_report
 perform_health_check
 email_report
+
+exit 0
