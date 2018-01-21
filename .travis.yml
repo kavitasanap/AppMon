@@ -25,9 +25,8 @@ jobs:
       before_script:
         - sudo service postfix stop
         - smtp-sink -d "%d.%H.%M.%S" localhost:2500 1000 &
-        - echo -e '#!/usr/bin/env bash\nexit 0' | sudo tee /usr/sbin/sendmail
+        #- echo -e '#!/usr/bin/env bash\nexit 0' | sudo tee /usr/sbin/sendmail
         - sudo service postfix restart
-        - sudo service sendmail restart
       script:
         - bash ./src/testemail  
     
