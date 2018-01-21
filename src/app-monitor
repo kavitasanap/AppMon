@@ -103,7 +103,7 @@ format_report()
 #===================================================================================
 add_to_report()
 {
-	echo $1 >> $html_report
+	echo "$1" >> $html_report
 }
 
 #=== FUNCTION ======================================================================
@@ -222,4 +222,3 @@ perform_health_check
 # error_count variable value can be used to notify Application team in case of any error only.
 # but for the assignment purpose sending email notification after every health check.
 email_report
-
