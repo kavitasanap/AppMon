@@ -265,3 +265,17 @@ Sun, Jan 21, 2018  7:47:53 PM: Notification sent successfully, everything is fin
 Sending notification Monitoring Report monitoring_report_2018-01-21-19-48-00.html
 {"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21-19-48-00.html","content": [{"Disposition": "inline","type": "text/html", "value": "<html> <body> Hi Team, <br> Please find below application monitoring report.<br> Look into the applications which are not green state.<br> <br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 19:48:00<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.406000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table><br>Regards<br>Monitoring Team</body></html>"}]}
 Sun, Jan 21, 2018  7:48:04 PM: Notification sent successfully, everything is fine
+2018-01-21 19:56:48==>Starting health check run
+2018-01-21 19:56:48==>Monitoring http://google.com started
+2018-01-21 19:56:49==>Monitoring http://google.com Finished
+2018-01-21 19:56:49==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21-19-56-48.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21-19-56-48.html","content": [{"Disposition": "inline","type": "text/html", "value": "<html> <body> Hi Team, <br> Please find below application monitoring report.<br> Look into the applications which are not green state.<br> <br><p style=font-size:20px;> Application Monitoring report</p> <br><p style=font-size:10px>started at </p>2018-01-21 19:56:48<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.500000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table><br>Regards<br>Monitoring Team</body></html>"}]}
+Sun, Jan 21, 2018  7:56:52 PM: Notification sent successfully, everything is fine
+2018-01-21 19:57:11==>Starting health check run
+2018-01-21 19:57:11==>Monitoring http://google.com started
+2018-01-21 19:57:12==>Monitoring http://google.com Finished
+2018-01-21 19:57:12==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21-19-57-11.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21-19-57-11.html","content": [{"Disposition": "inline","type": "text/html", "value": "<html> <body> Hi Team, <br> Please find below application monitoring report.<br> Look into the applications which are not green state.<br> <br><p style=font-size:20px;> Application Monitoring report</p> <br><p style=font-size:10px>started at </p>2018-01-21 19:57:11<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.469000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table><br>Regards<br>Monitoring Team</body></html>"}]}
+Sun, Jan 21, 2018  7:57:15 PM: Notification sent successfully, everything is fine

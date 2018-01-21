@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Merge master branch code to release branch"
-git merge release
-git push origin release
+git checkout release
+git merge -m "merging code `date`" --commit master
