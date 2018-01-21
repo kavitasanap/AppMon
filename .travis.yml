@@ -18,7 +18,6 @@ jobs:
     - stage: test
       before_install:
         - chmod +x ./src/app-monitoring
-        - chmod +x ./src/helper/send-email
       script:
         - bats test/bats
     - stage: sonarscan
@@ -27,7 +26,6 @@ jobs:
     - stage: release
       before_install:
         - chmod +x ./src/app-monitoring
-        - chmod +x ./src/helper/send-email
       script:
         - sh ./src/release.sh  
     
