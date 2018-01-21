@@ -1,11 +1,19 @@
 #!/usr/bin/env bats
 
+#Negative test to check if no arg case is handled
 @test "Check zero arg checks" {
-	run ./src/app-monitoring
+	run ./src/app-monitor
 	[ "${status}" -eq 1 ]
 }
 
-@test "A test I don't want to execute for now" {
-	run ./src/app-monitoring https://google.com  abcd
+#Test for invalid url
+@test "Test for invalid url" {
+	run ./src/app-monitor http://google.com  abcd
+	 [ "${status}" -eq 0 ]
+}
+
+#Test for all valid urls
+@test "Test for all valid urls" {
+	run ./src/app-monitor http://google.com  http://test.com
 	 [ "${status}" -eq 0 ]
 }

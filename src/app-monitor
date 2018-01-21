@@ -1,10 +1,10 @@
 #!/bin/bash
 #===================================================================================
 #
-# FILE: app-monitoring
+# FILE: app-monitor
 #
-# USAGE: ./src/app-monitoring url1 url2 url3 ...
-#   	 e.g. app-monitoring.sh http://centos.org http://webtest.com
+# USAGE: ./src/app-monitor url1 url2 url3 ...
+#   	 e.g. ./src/app-monitor http://centos.org http://webtest.com
 #
 # DESCRIPTION: Monitors the health of applications which are passed as a url.
 # The default starting directory is the current directory.
@@ -15,7 +15,7 @@
 #
 # NOTES: ---
 # AUTHOR: Kavita Sanap
-# VERSION: 1.0
+# VERSION: 1.0.0
 # CREATED: 19.01.2018 
 # REVISION: 
 #===================================================================================
@@ -29,7 +29,7 @@
 #===================================================================================
 email_report()
 {
-	bash ./src/helper/send-mail "$html_report"  "$email_from" "$email_to" "$log_file"
+	bash src/helper/send-notification "$html_report"  "$email_from" "$email_to" "$log_file"
 	
 }
 
@@ -40,14 +40,14 @@ email_report()
 usage()
 {
 	log "No app info provided as a script argument. Script need atleast one url to generate monitoring report.
-		 e.g. ./src/app-monitoring http://centos.org http://webtest.com" 
+		 e.g. ./src/app-monitor http://centos.org http://webtest.com" 
 
 	cat <<- EOT
 		 USAGE: 
 		 Monitors the health of applications which are passed as a url.
-		 ./src/app-monitoring url1 url2 url3 ...
+		 ./src/app-monitor url1 url2 url3 ...
 		 Script need atleast one url to generate monitoring report.
-		 e.g. app-monitoring.sh http://centos.org http://webtest.com
+		 e.g. app-monitor http://centos.org http://webtest.com
 		EOT
 		
 }
@@ -83,12 +83,9 @@ init()
 #===================================================================================
 format_report()
 {
- 	html_report="${BASE_DIR}/report/monitoring_report_`date '+%Y-%m-%d'`.html"		#monitoring report file name
+ 	html_report="${BASE_DIR}/report/monitoring_report_`date '+%Y-%m-%d-%H-%M-%S'`.html"		#monitoring report file name
+	echo "" >  "$html_report"   # truncate file if already exists
 	
-	if [[ ! -f "$html_report" && ! -s "$html_report" ]]; then    	#Header for Body
-			add_to_report "`cat resources/email_body_message.txt`"
-	fi
-	add_to_report "<html><body>"
 	add_to_report "`cat resources/report_intro.txt`"
 	add_to_report "`date '+%Y-%m-%d %H:%M:%S'`"
 	add_to_report "<table border=1>" 			
@@ -201,7 +198,7 @@ perform_health_check()
     done
 	
 	log "Finished health check run with $error_count error"
-	add_to_report "</table></body></html>"
+	add_to_report "</table><br>Regards<br>Monitoring Team</body></html>"
 }
 
 #=== ======================================================================
