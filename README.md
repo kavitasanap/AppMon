@@ -40,7 +40,8 @@ SENDGRID  : SendGrid is a cloud-based SMTP provider that allows user to send ema
 Release History:
 * 1.0.0
     - Added code base to github repo.
-	
+* 1.0.1
+    - added release changes.
 	
 References:
 https://sendgrid.com/
