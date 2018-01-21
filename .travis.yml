@@ -1,14 +1,11 @@
 dist: trusty
 
 addons:
-  apt:
-    sources:
-    - sourceline: 'ppa:duggan/bats'
-    packages:
-    - bats
-    - bc
-    - mutt
-    - mailutils
+  sonarcloud:
+    organization: "kavitagithub" # the key of the org you chose at step #3
+    token:
+      secure: $SONAR_TOKEN # encrypted value of your token
+
 language: bash 
 
 stages:
@@ -20,16 +17,25 @@ jobs:
   include:
     - stage: test
       before_install:
-        - chmod +x ./src/testemail
-      before_script:
+        - chmod +x ./src/app-monitoring
+        - chmod +x ./src/helper/send-email
       script:
-        - bash ./src/testemail  
+        - bats test/bats
+    - stage: sonarscan
+      script: 
+        - sonar-scanner
+    - stage: release
+      before_install:
+        - chmod +x ./src/app-monitoring
+        - chmod +x ./src/helper/send-email
+      script:
+        - sh ./src/release.sh  
     
 notifications:
   email:
     recipients:
       - kavitasanap@gmail.com
-    on_success: never # default: change
-    on_failure: never # default: always
+    on_success: always # default: change
+    on_failure: always # default: always
  
  

@@ -13,3 +13,213 @@
 2018-01-21 01:13:30==>sadas is not valid, skipping health check. Please verify it
 2018-01-21 01:13:30==>Monitoring sadas Finished
 2018-01-21 01:13:30==>Finished health check run with 1 error
+2018-01-21 11:49:57==>Starting health check run
+2018-01-21 11:49:57==>Monitoring asd started
+2018-01-21 11:49:57==>asd is not valid, skipping health check. Please verify it
+2018-01-21 11:49:57==>Monitoring asd Finished
+2018-01-21 11:49:57==>Finished health check run with 1 error
+2018-01-21 11:50:25==>Starting health check run
+2018-01-21 11:50:25==>Monitoring asd started
+2018-01-21 11:50:25==>asd is not valid, skipping health check. Please verify it
+2018-01-21 11:50:25==>Monitoring asd Finished
+2018-01-21 11:50:25==>Finished health check run with 1 error
+2018-01-21 11:50:48==>Starting health check run
+2018-01-21 11:50:48==>Monitoring asd started
+2018-01-21 11:50:48==>asd is not valid, skipping health check. Please verify it
+2018-01-21 11:50:49==>Monitoring asd Finished
+2018-01-21 11:50:49==>Finished health check run with 1 error
+2018-01-21 12:03:30==>Starting health check run
+2018-01-21 12:03:30==>Monitoring asd started
+2018-01-21 12:03:30==>asd is not valid, skipping health check. Please verify it
+2018-01-21 12:03:30==>Monitoring asd Finished
+2018-01-21 12:03:30==>Finished health check run with 1 error
+2018-01-21 12:49:08==>Starting health check run
+2018-01-21 12:49:08==>Monitoring asd started
+2018-01-21 12:49:08==>asd is not valid, skipping health check. Please verify it
+2018-01-21 12:49:08==>Monitoring asd Finished
+2018-01-21 12:49:08==>Finished health check run with 1 error
+2018-01-21 12:50:01==>Starting health check run
+2018-01-21 12:50:01==>Monitoring asd started
+2018-01-21 12:50:01==>asd is not valid, skipping health check. Please verify it
+2018-01-21 12:50:01==>Monitoring asd Finished
+2018-01-21 12:50:01==>Finished health check run with 1 error
+2018-01-21 12:53:31==>Starting health check run
+2018-01-21 12:53:31==>Monitoring asd started
+2018-01-21 12:53:31==>asd is not valid, skipping health check. Please verify it
+2018-01-21 12:53:31==>Monitoring asd Finished
+2018-01-21 12:53:31==>Finished health check run with 1 error
+2018-01-21 13:02:23==>Starting health check run
+2018-01-21 13:02:23==>Monitoring asd started
+2018-01-21 13:02:23==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:02:23==>Monitoring asd Finished
+2018-01-21 13:02:24==>Finished health check run with 1 error
+2018-01-21 13:03:15==>Starting health check run
+2018-01-21 13:03:15==>Monitoring asd started
+2018-01-21 13:03:15==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:03:15==>Monitoring asd Finished
+2018-01-21 13:03:16==>Finished health check run with 1 error
+2018-01-21 13:05:23==>Starting health check run
+2018-01-21 13:05:23==>Monitoring asd started
+2018-01-21 13:05:23==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:05:23==>Monitoring asd Finished
+2018-01-21 13:05:23==>Finished health check run with 1 error
+2018-01-21 13:11:05==>Starting health check run
+2018-01-21 13:11:05==>Monitoring asd started
+2018-01-21 13:11:05==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:11:05==>Monitoring asd Finished
+2018-01-21 13:11:05==>Finished health check run with 1 error
+2018-01-21 13:17:21==>Starting health check run
+2018-01-21 13:17:21==>Monitoring asd started
+2018-01-21 13:17:21==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:17:21==>Monitoring asd Finished
+2018-01-21 13:17:22==>Finished health check run with 1 error
+2018-01-21 13:20:39==>Starting health check run
+2018-01-21 13:20:39==>Monitoring http://google.com started
+2018-01-21 13:20:40==>Monitoring http://google.com Finished
+2018-01-21 13:20:40==>Monitoring asd started
+2018-01-21 13:20:40==>asd is not valid, skipping health check. Please verify it
+2018-01-21 13:20:40==>Monitoring asd Finished
+2018-01-21 13:20:40==>Finished health check run with 1 error
+2018-01-21 13:50:10==>Starting health check run
+2018-01-21 13:50:10==>Monitoring http://google.com started
+2018-01-21 13:50:11==>Monitoring http://google.com Finished
+2018-01-21 13:50:11==>Monitoring pqr started
+2018-01-21 13:50:11==>pqr is not valid, skipping health check. Please verify it
+2018-01-21 13:50:11==>Monitoring pqr Finished
+2018-01-21 13:50:11==>Finished health check run with 1 error
+2018-01-21 13:50:33==>Starting health check run
+2018-01-21 13:50:33==>Monitoring http://google.com started
+2018-01-21 13:50:35==>Monitoring http://google.com Finished
+2018-01-21 13:50:35==>Monitoring pqr started
+2018-01-21 13:50:35==>pqr is not valid, skipping health check. Please verify it
+2018-01-21 13:50:35==>Monitoring pqr Finished
+2018-01-21 13:50:35==>Finished health check run with 1 error
+2018-01-21 13:50:53==>Starting health check run
+2018-01-21 13:50:53==>Monitoring http://google.com started
+2018-01-21 13:50:54==>Monitoring http://google.com Finished
+2018-01-21 13:50:54==>Monitoring pqr started
+2018-01-21 13:50:54==>pqr is not valid, skipping health check. Please verify it
+2018-01-21 13:50:54==>Monitoring pqr Finished
+2018-01-21 13:50:54==>Finished health check run with 1 error
+2018-01-21 13:51:15==>Starting health check run
+2018-01-21 13:51:15==>Monitoring http://google.com started
+2018-01-21 13:51:16==>Monitoring http://google.com Finished
+2018-01-21 13:51:16==>Monitoring pqr started
+2018-01-21 13:51:16==>pqr is not valid, skipping health check. Please verify it
+2018-01-21 13:51:16==>Monitoring pqr Finished
+2018-01-21 13:51:16==>Finished health check run with 1 error
+2018-01-21 13:52:17==>Starting health check run
+2018-01-21 13:52:17==>Monitoring http://google.com started
+2018-01-21 13:52:18==>Monitoring http://google.com Finished
+2018-01-21 13:52:18==>Finished health check run with 0 error
+2018-01-21 13:53:03==>Starting health check run
+2018-01-21 13:53:03==>Monitoring http://google.com started
+2018-01-21 13:53:03==>Monitoring http://google.com Finished
+2018-01-21 13:53:03==>Finished health check run with 0 error
+2018-01-21 13:53:23==>Starting health check run
+2018-01-21 13:53:23==>Monitoring http://google.com started
+2018-01-21 13:53:23==>Monitoring http://google.com Finished
+2018-01-21 13:53:24==>Finished health check run with 0 error
+2018-01-21 13:53:31==>Starting health check run
+2018-01-21 13:53:31==>Monitoring http://google.com started
+2018-01-21 13:53:33==>Monitoring http://google.com Finished
+2018-01-21 13:53:33==>Finished health check run with 0 error
+2018-01-21 14:12:39==>Starting health check run
+2018-01-21 14:12:39==>Monitoring http://google.com started
+2018-01-21 14:12:40==>Monitoring http://google.com Finished
+2018-01-21 14:12:40==>Finished health check run with 0 error
+2018-01-21 14:13:53==>Starting health check run
+2018-01-21 14:13:53==>Monitoring http://google.com started
+2018-01-21 14:13:54==>Monitoring http://google.com Finished
+2018-01-21 14:13:55==>Finished health check run with 0 error
+2018-01-21 14:14:06==>Starting health check run
+2018-01-21 14:14:06==>Monitoring http://google.com started
+2018-01-21 14:14:07==>Monitoring http://google.com Finished
+2018-01-21 14:14:07==>Finished health check run with 0 error
+2018-01-21 14:14:39==>Starting health check run
+2018-01-21 14:14:39==>Monitoring http://google.com started
+2018-01-21 14:14:40==>Monitoring http://google.com Finished
+2018-01-21 14:14:40==>Finished health check run with 0 error
+2018-01-21 14:18:40==>Starting health check run
+2018-01-21 14:18:40==>Monitoring http://google.com started
+2018-01-21 14:18:41==>Monitoring http://google.com Finished
+2018-01-21 14:18:41==>Finished health check run with 0 error
+2018-01-21 14:18:56==>Starting health check run
+2018-01-21 14:18:56==>Monitoring http://google.com started
+2018-01-21 14:18:57==>Monitoring http://google.com Finished
+2018-01-21 14:18:57==>Finished health check run with 0 error
+2018-01-21 14:20:12==>Starting health check run
+2018-01-21 14:20:12==>Monitoring http://google.com started
+2018-01-21 14:20:13==>Monitoring http://google.com Finished
+2018-01-21 14:20:13==>Finished health check run with 0 error
+2018-01-21 14:20:58==>Starting health check run
+2018-01-21 14:20:58==>Monitoring http://google.com started
+2018-01-21 14:20:59==>Monitoring http://google.com Finished
+2018-01-21 14:20:59==>Finished health check run with 0 error
+2018-01-21 14:29:57==>Starting health check run
+2018-01-21 14:29:57==>Monitoring http://google.com started
+2018-01-21 14:29:58==>Monitoring http://google.com Finished
+2018-01-21 14:29:58==>Finished health check run with 0 error
+2018-01-21 14:30:47==>Starting health check run
+2018-01-21 14:30:47==>Monitoring http://google.com started
+2018-01-21 14:30:47==>Monitoring http://google.com Finished
+2018-01-21 14:30:47==>Finished health check run with 0 error
+2018-01-21 14:31:39==>Starting health check run
+2018-01-21 14:31:39==>Monitoring http://google.com started
+2018-01-21 14:31:40==>Monitoring http://google.com Finished
+2018-01-21 14:31:40==>Finished health check run with 0 error
+2018-01-21 14:50:01==>Starting health check run
+2018-01-21 14:50:01==>Monitoring http://google.com started
+2018-01-21 14:50:01==>Monitoring http://google.com Finished
+2018-01-21 14:50:01==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html>"}]}
+Sun, Jan 21, 2018  2:50:04 PM: Notification sent successfully, everything is fine
+2018-01-21 14:53:51==>Starting health check run
+2018-01-21 14:53:52==>Monitoring http://google.com started
+2018-01-21 14:53:52==>Monitoring http://google.com Finished
+2018-01-21 14:53:52==>Finished health check run with 0 error
+2018-01-21 14:54:17==>Starting health check run
+2018-01-21 14:54:17==>Monitoring http://google.com started
+2018-01-21 14:54:18==>Monitoring http://google.com Finished
+2018-01-21 14:54:18==>Finished health check run with 0 error
+2018-01-21 14:54:29==>Starting health check run
+2018-01-21 14:54:29==>Monitoring http://google.com started
+2018-01-21 14:54:30==>Monitoring http://google.com Finished
+2018-01-21 14:54:30==>Finished health check run with 0 error
+2018-01-21 15:07:35==>Starting health check run
+2018-01-21 15:07:35==>Monitoring http://google.com started
+2018-01-21 15:07:35==>Monitoring http://google.com Finished
+2018-01-21 15:07:35==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:53:51<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:17<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:29<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:07:35<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.375000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html>"}]}
+Notification emailed failed with 127
+2018-01-21 15:09:10==>Starting health check run
+2018-01-21 15:09:10==>Monitoring http://google.com started
+2018-01-21 15:09:11==>Monitoring http://google.com Finished
+2018-01-21 15:09:11==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:53:51<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:17<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:29<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:07:35<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.375000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:10<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html>"}]}
+Notification emailed failed with 127
+2018-01-21 15:09:16==>Starting health check run
+2018-01-21 15:09:16==>Monitoring asd started
+2018-01-21 15:09:16==>asd is not valid, skipping health check. Please verify it
+2018-01-21 15:09:16==>Monitoring asd Finished
+2018-01-21 15:09:16==>Finished health check run with 1 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:53:51<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:17<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:29<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:07:35<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.375000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:10<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:16<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=yellow> <td>asd</td> <td>0</td> <td>NA</td> <td>Invalid URL</td> </tr></table></body></html>"}]}
+Notification emailed failed with 127
+2018-01-21 15:09:40==>Starting health check run
+2018-01-21 15:09:40==>Monitoring http://google.com started
+2018-01-21 15:09:41==>Monitoring http://google.com Finished
+2018-01-21 15:09:41==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:53:51<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:17<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:29<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:07:35<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.375000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:10<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:16<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=yellow> <td>asd</td> <td>0</td> <td>NA</td> <td>Invalid URL</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:40<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.360000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html>"}]}
+Notification emailed failed with 127
+2018-01-21 15:10:16==>Starting health check run
+2018-01-21 15:10:16==>Monitoring http://google.com started
+2018-01-21 15:10:16==>Monitoring http://google.com Finished
+2018-01-21 15:10:16==>Finished health check run with 0 error
+Sending notification Monitoring Report monitoring_report_2018-01-21.html
+{"personalizations": [{"to": [{"email": "kavitasanap@gmail.com"}]}],"from": {"email": "kavitasanap@gmail.com", "name": "Monitoring Team"},"subject": "monitoring_report_2018-01-21.html","content": [{"Disposition": "inline","type": "text/html", "value": "Hi Team, Please find below application monitoring report. Look into the applications which are not green state. you can download report from https://github.com/kavitasanap/AppMonitor/tree/master/report. Use the report name provided in email subject Regards, Monitoring Team<html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:12<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.391000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:20:58<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.468000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:29:57<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:30:47<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:31:39<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.328000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:50:01<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:53:51<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.359000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:17<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 14:54:29<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.344000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:07:35<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.375000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:10<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:16<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=yellow> <td>asd</td> <td>0</td> <td>NA</td> <td>Invalid URL</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:09:40<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.360000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html><html><body><br><p style=font-size:20px;> Application Monitoring report</p> <br><p align=left>started at2018-01-21 15:10:16<table border=1><tr> <th>URL</th> <th>RESPONSE_TOTALTIME</th> <th>RESPONSE_CODE</th> <th>RESPONSE_DESCRIPTION</th> </tr><tr bgcolor=green> <td>http://google.com</td> <td>0.313000</td> <td>302</td> <td>COMPONENT IS GREEN</td> </tr></table></body></html>"}]}
+Sun, Jan 21, 2018  3:10:18 PM: Notification sent successfully, everything is fine

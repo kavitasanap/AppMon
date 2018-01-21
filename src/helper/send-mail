@@ -1,0 +1,93 @@
+#!/bin/bash
+
+#===================================================================================
+#
+# FILE: send-mail
+#
+# USAGE: .send-mail file-path mail_from mail_to
+#   	 e.g. send-mail ${HOME}/AppMonitor/report/monitoring_report_2018-01-21.html sender@gmail.com receiver@gmail.com
+#
+# DESCRIPTION: Post health checkup email reports to concern team
+# The default starting directory is the current directory.
+# Script need 4 arguments report file path, sender email id, receiver email id , log file path
+#
+# REQUIREMENTS: Application team needs to be notified after application health check.
+#
+# NOTES: ---
+# AUTHOR: Kavita Sanap
+# VERSION: 1.0
+# CREATED: 21.01.2018 
+# REVISION: 
+#===================================================================================
+
+#=== FUNCTION ======================================================================
+# NAME: usage
+# DESCRIPTION: Display the usage information for this script.
+#===================================================================================
+usage()
+{
+	log "No arguments provided with the script. Script need 4 args to send email notification.
+		 e.g. send-mail ${HOME}/AppMonitor/report/monitoring_report_2018-01-21.html sender@gmail.com receiver@gmail.com"
+
+	cat <<- EOT
+		 USAGE: 
+		 Post health checkup email reports to concern team.
+		 .send-mail file-path mail_from mail_to
+    	 e.g. send-mail ${HOME}/AppMonitor/report/monitoring_report_2018-01-21.html sender@gmail.com receiver@gmail.com
+	EOT
+		
+}
+
+#=== FUNCTION ======================================================================
+# NAME: init
+# DESCRIPTION: initialize all the required variables.
+#===================================================================================
+init()
+{
+	from_name="Monitoring Team"
+	
+}
+
+send_email()
+{
+	
+	if [[ "$#" != 4 ]]; then 	#if no arg provided
+		usage
+		exit 1
+	fi  
+	
+	html_report="$1" 		# absolute html report file path
+	mail_from="$2"  		# Sender email address
+	mail_to="$3"    		# Receiver email address
+	log_file="$4"			
+	
+	subject=`echo $html_report |  awk -F/ '{print $NF}'`
+	
+	echo "Sending notification Monitoring Report $subject"  >> "$log_file"
+	
+	body_html=`tr -d '\n\r' < $html_report` # remove CR (Carriage Return) & LF (Line Feed) as it throws parsing error. 
+
+	maildata='{"personalizations": [{"to": [{"email": "'${mail_to}'"}]}],"from": {"email": "'${mail_from}'", 
+		"name": "'${from_name}'"},"subject": "'${subject}'","content": [{"Disposition": "inline","type": "text/html", "value": "'${body_html}'"}]}'
+	
+	echo $maildata   >> "$log_file"
+	#Sent email using sendgrid curl APIS
+	curl --request POST \
+	--url https://api.sendgrid.com/v3/mail/send \
+	--header 'Authorization: Bearer '$SENDGRID_API_KEY \
+	--header 'Content-Type: application/json' \
+	--data "'$maildata'"
+
+				
+	result=$?
+	
+	if [ "${result}" -eq "0" ] ; then   #Check exit code for error
+		echo "`date`: Notification sent successfully, everything is fine" >> "$log_file"
+	else
+		echo "Notification emailed failed with ${result}" >> "$log_file"
+	fi
+	
+}
+
+init
+send_email $@

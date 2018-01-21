@@ -1,2 +1,2 @@
-<br><p align=left style="font-size:36px;"> Application Monitoring report</p>
-<br><p align=left style="font-size:20px;">started at :
+<br><p style=font-size:20px;> Application Monitoring report</p>
+<br><p align=left>started at  

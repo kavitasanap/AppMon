@@ -1,9 +1,9 @@
 #!/bin/bash
 #===================================================================================
 #
-# FILE: app-monitoring.sh
+# FILE: app-monitoring
 #
-# USAGE: app-monitoring.sh url1 url2 url3 ...
+# USAGE: ./src/app-monitoring url1 url2 url3 ...
 #   	 e.g. app-monitoring.sh http://centos.org http://webtest.com
 #
 # DESCRIPTION: Monitors the health of applications which are passed as a url.
@@ -29,10 +29,7 @@
 #===================================================================================
 email_report()
 {
-	echo "-s Monitoring Report -a $html_report -- $email < ${BASE_DIR}/resources/email_body_message.txt"
-	#mutt -s "Monitoring Report" -a "${html_report}" -- "${email}" < ${BASE_DIR}/resources/email_body_message.txt
-	mail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
-	
+	bash ./src/helper/send-mail "$html_report"  "$email_from" "$email_to" "$log_file"
 	
 }
 
@@ -43,12 +40,12 @@ email_report()
 usage()
 {
 	log "No app info provided as a script argument. Script need atleast one url to generate monitoring report.
-		 e.g. app-monitoring.sh http://centos.org http://webtest.com" 
+		 e.g. ./src/app-monitoring http://centos.org http://webtest.com" 
 
 	cat <<- EOT
 		 USAGE: 
 		 Monitors the health of applications which are passed as a url.
-		 app-monitoring.sh url1 url2 url3 ...
+		 ./src/app-monitoring url1 url2 url3 ...
 		 Script need atleast one url to generate monitoring report.
 		 e.g. app-monitoring.sh http://centos.org http://webtest.com
 		EOT
@@ -74,7 +71,9 @@ init()
     BASE_DIR=`pwd`
 	echo $BASE_DIR
     error_count=0
-	email="kavitasanap@gmail.com"			#email address to notify health check result
+	email_to="kavitasanap@gmail.com"		#Recipient address to notify health check result
+	email_from="kavitasanap@gmail.com"		#Sender email address
+	
 	log_file="${BASE_DIR}/log/health_check_log_`date '+%Y-%m-%d'`.log"		#log file name to capture script execution 
 }
 
@@ -86,10 +85,13 @@ format_report()
 {
  	html_report="${BASE_DIR}/report/monitoring_report_`date '+%Y-%m-%d'`.html"		#monitoring report file name
 	
+	if [[ ! -f "$html_report" && ! -s "$html_report" ]]; then    	#Header for Body
+			add_to_report "`cat resources/email_body_message.txt`"
+	fi
 	add_to_report "<html><body>"
 	add_to_report "`cat resources/report_intro.txt`"
 	add_to_report "`date '+%Y-%m-%d %H:%M:%S'`"
-	add_to_report "<table border='1'>" 			
+	add_to_report "<table border=1>" 			
 	add_to_report "<tr> <th>URL</th> \
 				        <th>RESPONSE_TOTALTIME</th> \
 						<th>RESPONSE_CODE</th> \
@@ -119,7 +121,7 @@ add_to_report()
 #===================================================================================
 save_health_status()
 {
-   add_to_report "<tr bgcolor="$1"> <td>$2</td> \
+   add_to_report "<tr bgcolor=$1> <td>$2</td> \
 					   <td>$3</td> \
 					   <td>$4</td> \
 					   <td>$5</td> \
@@ -219,5 +221,8 @@ init
 parse_input $@
 format_report
 perform_health_check
+
+# error_count variable value can be used to notify Application team in case of any error only.
+# but for the assignment purpose sending email notification after every health check.
 email_report
 
