@@ -7,18 +7,9 @@ echo "test email in travis-ci ${html_report}"
 
 email="kavitasanap@gmail.com"
 
-ps aux | grep sendmail
-ps aux | grep mail
-ps aux | grep mutt
-
-
-echo "Sending email using mutt"
-mutt -s "Monitoring Report" -a "${html_report}" -- "${email}" < ${BASE_DIR}/resources/email_body_message.txt
-
-echo "Sending email using mail"
-mail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
-
-sendmail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
-	
+curl --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header "Authorization: Bearer $SENDGRID_API_KEY" \
+  --header 'Content-Type: application/json' \
+  --data '{"personalizations": [{"to": [{"email": ${email}}]}],"from": {"email": {"kavitasanap@gmail"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]}'
 echo "finished email testing"
-
