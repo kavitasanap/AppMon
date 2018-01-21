@@ -42,6 +42,8 @@ Release History:
     - Added code base to github repo.
 * 1.0.1
     - added release changes.
+* 1.0.2
+    - added log function in send-notification.
 	
 References:
 https://sendgrid.com/

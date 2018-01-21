@@ -46,6 +46,17 @@ init()
 	
 }
 
+
+#=== FUNCTION ======================================================================
+# NAME: log
+# DESCRIPTION: log all the messages which cab be use trouble shooting
+#			   in case of script issues. 
+#===================================================================================
+log()
+{
+	echo "send-notification: `date '+%Y-%m-%d %H:%M:%S'`==>$1" >> $log_file
+}
+
 #=== FUNCTION ======================================================================
 # NAME: send_email
 # DESCRIPTION: Use SendGrid api to send health check status metrics to receiver 
@@ -69,14 +80,14 @@ send_email()
 	
 	subject=`echo $html_report |  awk -F/ '{print $NF}'`
 	
-	echo "Sending notification Monitoring Report $subject"  >> "$log_file"
+	log "Sending notification Monitoring Report $subject"
 	
 	body_html=`tr -d '\n\r' < $html_report` # remove CR (Carriage Return) & LF (Line Feed) as it throws parsing error. 
 
 	maildata='{"personalizations": [{"to": [{"email": "'${mail_to}'"}]}],"from": {"email": "'${mail_from}'", 
 		"name": "'${from_name}'"},"subject": "'${subject}'","content": [{"Disposition": "inline","type": "text/html", "value": "'${body_html}'"}]}'
 	
-	echo $maildata   >> "$log_file"
+	log "$maildata"
 	
 	#Sent email using sendgrid curl APIS
 	curl --request POST \
@@ -88,9 +99,9 @@ send_email()
 	result=$?
 	
 	if [ "${result}" -eq "0" ] ; then   #Check exit code for error
-		echo "`date`: Notification sent successfully, everything is fine" >> "$log_file"
+		log "`date`: Notification sent successfully, everything is fine"
 	else
-		echo "Notification emailed failed with ${result}" >> "$log_file"
+		log "Notification emailed failed with ${result}"
 		exit 1
 	fi
 	

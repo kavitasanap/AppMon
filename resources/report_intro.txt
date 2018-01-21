@@ -5,4 +5,4 @@
 Please find below application monitoring report.<br>
 Look into the applications which are not green state.<br>
 <br><p style=font-size:20px;> Application Monitoring report</p>
-<br><p style=font-size:10px>started at  </p>   
+<br><p style=font-size:20px;>started at     
