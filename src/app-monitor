@@ -70,6 +70,10 @@ init()
 {
     BASE_DIR=`pwd`
 	echo $BASE_DIR
+	
+	mkdir -p ${BASE_DIR}/log			#create directories if not exists
+	mkdir -p ${BASE_DIR}/report
+	
     error_count=0
 	email_to="kavitasanap@gmail.com"		#Recipient address to notify health check result
 	email_from="kavitasanap@gmail.com"		#Sender email address
@@ -181,6 +185,7 @@ perform_health_check()
 	  validate_url						
 	  if [[ "$?" == 0 ]]; then			#Execute curl for valid urls
 	  {
+		#
 		 response=`curl -m 60 --retry 3  --retry-delay 30 --silent -w "http_status:%{http_code} response_time:%{time_total}" $url -o /dev/null`
 	  	 curl_stat=$?					#curl exit status to handle network errors
 		 parse_status $curl_stat
