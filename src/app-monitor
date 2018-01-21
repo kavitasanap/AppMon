@@ -162,8 +162,8 @@ parse_status()
 	# for user friendly message in the report.
 	#----------------------------------------------------------------------
 	case $response_code in
-		200|302) response_description="COMPONENT IS GREEN" row_color="green";;
-		401) response_description="COMPONENT IS RED";;		
+		200|302) response_description="Component Status: GREEN" row_color="green";;
+		401) response_description="Component Status: RED";;		
 		000) response_description=`awk -v k=$curl_stat -F":" '$1==k{ print $2} ' resources/error_lookup.txt`;;
 		*)   response_description="Please debug the issue to fix $response_code";;
 	esac

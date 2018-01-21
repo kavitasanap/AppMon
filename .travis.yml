@@ -27,12 +27,9 @@ jobs:
       before_install:
         - chmod +x ./src/app-monitor
       before_script:
-        - composer self-update -q
-        - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN} fi
-        - if [ -z "$dependencies" ]; then composer install fi
-        - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n fi
-        - if [ "$dependencies" = "highest" ]; then composer update -n fi
-        - composer show -i
+        - composer config -g github-oauth.github.com $GH_TOKEN
+        - travis_retry composer self-update
+        - travis_retry composer update --prefer-dist --no-interaction $COMPOSER_FLAGS
       script:
         - bash ./src/release
     
