@@ -35,7 +35,7 @@ SENDGRID  : SendGrid is a cloud-based SMTP provider that allows user to send ema
 			technical details, from scaling the infrastructure to ISP outreach 
 			and reputation monitoring to whitelist services and real time analytics.
 			SendGrid provides webapi for integration with application. 
-			
+
 						
 Release History:
 * 1.0.0
