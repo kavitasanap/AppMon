@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+BASE_DIR=`pwd`
+html_report="${BASE_DIR}/report/monitoring_report_2018-01-21.html"
+echo "test email in travis-ci ${html_report}"
+
+email="kavitasanap@gmail.com"
+
+echo "Sending email using mutt"
+mutt -s "Monitoring Report" -a "${html_report}" -- "${email}" < ${BASE_DIR}/resources/email_body_message.txt
+
+echo "Sending email using mail"
+mail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
+	
+echo "finished email testing"
