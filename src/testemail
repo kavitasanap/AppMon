@@ -7,10 +7,18 @@ echo "test email in travis-ci ${html_report}"
 
 email="kavitasanap@gmail.com"
 
+ps aux | grep sendmail
+ps aux | grep mail
+ps aux | grep mutt
+
 echo "Sending email using mutt"
 mutt -s "Monitoring Report" -a "${html_report}" -- "${email}" < ${BASE_DIR}/resources/email_body_message.txt
 
 echo "Sending email using mail"
-mail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
+mail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.
+
+sendmail -s "Monitoring report using mail" -t "${email}" -A "${html_report}" < ${BASE_DIR}/resources/email_body_message.txt
 	
 echo "finished email testing"
+
+cat /var/log/mail
