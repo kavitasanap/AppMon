@@ -94,7 +94,7 @@ format_report()
 	add_to_report "`date '+%Y-%m-%d %H:%M:%S'`"
 	add_to_report "<table border=1>" 			
 	add_to_report "<tr> <th>URL</th> \
-						<th>timestamp_epoch</th>	\
+						<th>TIMESTAMP_EPOCH</th>	\
 				        <th>RESPONSE_TOTALTIME</th> \
 						<th>RESPONSE_CODE</th> \
 						<th>RESPONSE_DESCRIPTION</th> 
