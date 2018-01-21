@@ -26,6 +26,8 @@ jobs:
     - stage: release
       before_install:
         - chmod +x ./src/app-monitor
+      before_script:
+        - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
       script:
         - bash ./src/release
     
